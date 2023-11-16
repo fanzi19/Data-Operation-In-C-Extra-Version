@@ -1,0 +1,26 @@
+# Data-Operation-in-C-Extra-Version
+
+Here's a program for data operation.
+In this program, you can read data from a .txt file, search for specific data in condition, and add new data.
+
+main file: main.c 
+    lastest version (V2): remove data record, update data, find the M top employess with the highest salaries, find all matching data records;
+    previous version (V1): print database, search through id, search through last_name (provides three search methods), add data record;
+dataset: data.txt
+
+sources:
+1.1 readfile.c: provide functions for read operations like open/close file, read int/float/string, skip header and print out the whole data file;
+1.2 readfile.h: .h file for readfile.c;
+2.1 search.c: provide different search methods 
+    lastest version (V2): find all data record, revised previous functions to perform pointer to pointer operations;
+    previous version (V1): quicksort, linear search, binary search, fibonacci search and inorder binary tree search; 
+2.2 search.h: .h file for search.c;
+3.1 dataops.c: 
+    lastest version (V2): remove data record, update data information, revised previous functions to perform pointer to pointer operations;
+    previous version (V1): provide function to add new data row to the existing struct and file;
+3.2 dataops.h: .h file for adddata.c;
+3.4 employee.h: provide struct for the current dataset;
+
+Instructions:
+Method1: The main.exe file already exists, use the command "./main" in the terminal to exeucte it;
+Method2: If you want to create a new .exe file, execute this command "gcc main.c readfile.c search.c adddata.c -o main" to generate it, and then execute "./main" to run it. 
